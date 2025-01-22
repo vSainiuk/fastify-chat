@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: fastify-chat
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - .:/usr/src/app
+      - /app/node_modules
+    command: npm run dev

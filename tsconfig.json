@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"target": "ES6",
+		"module": "CommonJS",
+		"strict": true,
+		"outDir": "dist",
+		"rootDir": "src",
+		"esModuleInterop": true,
+		"resolveJsonModule": true
+	},
+	"include": ["src", "src/types/auth.d.ts", "src/types/fastify.d.ts"],
+	"exclude": ["node_modules", "dist"]
+}
